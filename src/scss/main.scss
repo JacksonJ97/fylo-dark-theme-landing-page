@@ -1,2 +1,7 @@
-@use "abstracts/variables";
+@use "abstracts/variables" as *;
 @use "base";
+
+body {
+  background-color: $background;
+  color: $white;
+}
