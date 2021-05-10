@@ -10,6 +10,15 @@ a {
   color: white;
 }
 
+button {
+  border-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
@@ -19,13 +28,47 @@ body {
 button {
   color: white;
   background: linear-gradient(to right, #65e2d9, #339ecc);
-  border-style: none;
   border-radius: 24px;
   cursor: pointer;
 }
 
 button:hover {
   background: #b3e2f1;
+}
+
+.testimonial-card {
+  background-color: #202a3c;
+  border-radius: 6px;
+  padding: 2em 1.75em;
+  margin-bottom: 2em;
+}
+
+.testimonial-body {
+  font-size: 0.75rem;
+  line-height: 1.8;
+  margin-bottom: 2em;
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+}
+
+.user-details img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.user-name {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.user-title {
+  font-size: 0.625rem;
 }
 
 .info-card {
@@ -43,6 +86,41 @@ button:hover {
   font-size: 1.125rem;
   font-weight: 700;
   margin-bottom: 0.75em;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+  margin-bottom: 1em;
+}
+
+.cta-content {
+  background-color: #1c2431;
+  text-align: center;
+  padding: 2em 1.5em;
+  border-radius: 8px;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+.cta-content p {
+  margin-bottom: 2em;
+}
+
+input[type=email] {
+  width: 90%;
+  border-radius: 24px;
+  padding: 1em 0;
+  margin-bottom: 1.25em;
+}
+
+input[type=submit] {
+  width: 90%;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+  border-radius: 24px;
+  padding: 1em 0;
+  cursor: pointer;
 }
 
 body {
@@ -109,6 +187,11 @@ h1 {
 .info-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-bottom: 6em;
+}
+
+.testimonial-content {
+  margin-bottom: 10em;
 }
 
 .second-pic {

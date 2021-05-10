@@ -1,0 +1,18 @@
+@use "abstracts/variables" as *;
+
+input[type="email"] {
+  width: 90%;
+  border-radius: 24px;
+  padding: 1em 0;
+  margin-bottom: 1.25em;
+}
+
+input[type="submit"] {
+  width: 90%;
+  font-family: $body-font;
+  color: $white;
+  background: linear-gradient(to right, $cyan, $blue);
+  border-radius: 24px;
+  padding: 1em 0;
+  cursor: pointer;
+}
