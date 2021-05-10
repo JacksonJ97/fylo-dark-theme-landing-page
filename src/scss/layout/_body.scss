@@ -1,0 +1,12 @@
+@use "abstracts/variables" as *;
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: $mainBackground;
+}
+
+.container {
+  padding: 2em 0;
+  width: 80%;
+}

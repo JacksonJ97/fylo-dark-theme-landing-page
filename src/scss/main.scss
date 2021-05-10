@@ -1,7 +1,8 @@
-@use "abstracts/variables" as *;
+@use "abstracts/variables";
 @use "base";
+@use "components";
+@use "layout";
 
-body {
-  background-color: $background;
-  color: $white;
-}
+.second-pic {
+  width: 50%;
+} // TEMPORARY

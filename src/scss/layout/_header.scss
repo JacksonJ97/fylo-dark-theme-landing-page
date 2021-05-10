@@ -1,0 +1,26 @@
+@use "abstracts/variables" as *;
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3em;
+}
+
+header img {
+  max-width: 25%;
+}
+
+nav {
+  display: flex;
+}
+
+nav li {
+  display: flex;
+  margin-left: 1.25em;
+}
+
+nav li a {
+  font-family: $header-font;
+  font-size: 0.75rem;
+}

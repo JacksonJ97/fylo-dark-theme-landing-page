@@ -1,0 +1,26 @@
+@use "abstracts/variables" as *;
+
+h1 {
+  font-family: $header-font;
+  font-size: 1.375rem;
+  margin-bottom: 0.75em;
+  line-height: 1.5;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content img {
+  max-width: 90%;
+  margin-bottom: 2em;
+}
+
+.hero-content p {
+  margin-bottom: 2em;
+}
+
+.hero-content button {
+  padding: 1em 6em;
+  margin-bottom: 10em;
+}
