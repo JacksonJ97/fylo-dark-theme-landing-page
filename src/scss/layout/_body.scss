@@ -1,12 +1,22 @@
 @use "abstracts/variables" as *;
 
 body {
-  display: grid;
-  place-items: center;
   background-color: $mainBackground;
+  min-width: 300px;
+}
+
+.header-bg {
+  position: absolute;
+  min-width: 300px;
+  width: 100vw;
+  height: 400px;
+  background-color: $darkBlue;
+  top: 0;
+  z-index: -2;
 }
 
 .container {
-  padding: 2em 0;
+  min-width: 300px;
   width: 80%;
+  margin: 0 auto;
 }

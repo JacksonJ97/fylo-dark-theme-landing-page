@@ -4,7 +4,9 @@
   background-color: $testimonialBackground;
   border-radius: 6px;
   padding: 2em 1.75em;
-  margin-bottom: 2em;
+  margin: 0 auto 2em auto;
+  max-width: 300px;
+  position: relative;
 }
 
 .testimonial-body {
@@ -33,4 +35,11 @@
 
 .user-title {
   font-size: 0.625rem;
+}
+
+.bg-quotes {
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 5%;
 }

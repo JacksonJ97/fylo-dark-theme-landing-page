@@ -40,7 +40,9 @@ button:hover {
   background-color: #202a3c;
   border-radius: 6px;
   padding: 2em 1.75em;
-  margin-bottom: 2em;
+  margin: 0 auto 2em auto;
+  max-width: 300px;
+  position: relative;
 }
 
 .testimonial-body {
@@ -71,12 +73,21 @@ button:hover {
   font-size: 0.625rem;
 }
 
+.bg-quotes {
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 5%;
+}
+
 .info-card {
   text-align: center;
-  margin-bottom: 6em;
+  margin: 0 auto 6em auto;
+  max-width: 350px;
 }
 
 .info-card img {
+  height: 78px;
   max-width: 25%;
   margin: 0 auto 2em auto;
 }
@@ -94,7 +105,7 @@ h3 {
   margin-bottom: 1em;
 }
 
-.cta-content {
+.cta-content .container {
   background-color: #1c2431;
   text-align: center;
   padding: 2em 1.5em;
@@ -124,21 +135,35 @@ input[type=submit] {
 }
 
 body {
-  display: grid;
-  place-items: center;
   background-color: #181f2a;
+  min-width: 300px;
+}
+
+.header-bg {
+  position: absolute;
+  min-width: 300px;
+  width: 100vw;
+  height: 400px;
+  background-color: #1c2431;
+  top: 0;
+  z-index: -2;
 }
 
 .container {
-  padding: 2em 0;
+  min-width: 300px;
   width: 80%;
+  margin: 0 auto;
 }
 
 header {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 3em;
 }
 
 header img {
@@ -168,6 +193,12 @@ h1 {
 
 .hero-content {
   text-align: center;
+  margin-bottom: 10em;
+  background: url(/bg-curvy-mobile.3eef75f6.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 140px;
+  background-position: 0% 50%;
+  position: relative;
 }
 
 .hero-content img {
@@ -181,19 +212,63 @@ h1 {
 
 .hero-content button {
   padding: 1em 6em;
-  margin-bottom: 10em;
 }
 
 .info-content {
+  margin-bottom: 4em;
+}
+
+.info-content .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin-bottom: 6em;
+  grid-column-gap: 12px;
+  max-width: 900px;
+}
+
+.second-info-content {
+  margin-bottom: 10em;
+}
+
+.second-info-picture {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 4em auto;
+}
+
+.second-info-content h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+  margin-bottom: 1em;
+}
+
+.second-info-content p {
+  margin-bottom: 1em;
+}
+
+.second-info-content a {
+  display: flex;
+  align-items: center;
+  width: 130px;
+  font-size: 0.75rem;
+  color: #65e2d9;
+  border-bottom: 1px solid #65e2d9;
+  padding-bottom: 0.25em;
+}
+
+.second-info-content a img {
+  margin-left: 0.25em;
 }
 
 .testimonial-content {
   margin-bottom: 10em;
 }
 
-.second-pic {
-  width: 50%;
+.testimonial-content .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 12px;
+}
+
+footer {
+  background-color: #0b1523;
 }

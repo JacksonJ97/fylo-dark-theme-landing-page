@@ -1,0 +1,35 @@
+@use "abstracts/variables" as *;
+
+.second-info-content {
+  margin-bottom: 10em;
+}
+
+.second-info-picture {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 4em auto;
+}
+
+.second-info-content h2 {
+  font-family: $header-font;
+  font-size: 1.125rem;
+  margin-bottom: 1em;
+}
+
+.second-info-content p {
+  margin-bottom: 1em;
+}
+
+.second-info-content a {
+  display: flex;
+  align-items: center;
+  width: 130px;
+  font-size: 0.75rem;
+  color: $cyan;
+  border-bottom: 1px solid $cyan;
+  padding-bottom: 0.25em;
+}
+
+.second-info-content a img {
+  margin-left: 0.25em;
+}

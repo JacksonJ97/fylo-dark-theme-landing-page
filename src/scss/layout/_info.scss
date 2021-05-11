@@ -1,5 +1,12 @@
+@use "abstracts/variables" as *;
+
 .info-content {
+  margin-bottom: 4em;
+}
+
+.info-content .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin-bottom: 6em;
+  grid-column-gap: 12px;
+  max-width: 900px;
 }

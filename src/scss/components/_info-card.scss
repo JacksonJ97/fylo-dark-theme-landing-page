@@ -2,10 +2,12 @@
 
 .info-card {
   text-align: center;
-  margin-bottom: 6em;
+  margin: 0 auto 6em auto;
+  max-width: 350px;
 }
 
 .info-card img {
+  height: 78px;
   max-width: 25%;
   margin: 0 auto 2em auto;
 }
