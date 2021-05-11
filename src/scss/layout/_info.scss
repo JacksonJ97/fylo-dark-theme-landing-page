@@ -7,6 +7,6 @@
 .info-content .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-column-gap: 12px;
+  grid-column-gap: 32px;
   max-width: 900px;
 }

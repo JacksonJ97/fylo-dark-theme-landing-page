@@ -2,6 +2,6 @@
 
 body {
   font-family: $body-font;
-  font-size: 0.875rem;
+  font-size: clamp(14px, 2vw, 16px);
   color: $white;
 }

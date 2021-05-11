@@ -23,7 +23,8 @@ h1 {
 }
 
 .hero-content p {
-  margin-bottom: 2em;
+  margin: 0 auto 2em auto;
+  max-width: 500px;
 }
 
 .hero-content button {

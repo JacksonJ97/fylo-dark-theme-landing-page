@@ -2,4 +2,45 @@
 
 footer {
   background-color: $footerBackground;
+  min-width: 300px;
+  padding: 2em 0;
+}
+
+.company-logo {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.contact-container {
+  margin-bottom: 6em;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.contact-info:first-child {
+  align-items: flex-start;
+}
+
+.contact-info:first-child img {
+  margin-top: 0.5em;
+}
+
+.contact-info img {
+  margin-right: 1.5em;
+}
+
+.contact-info p {
+  margin-left: 0.5em;
+}
+
+.footer-links {
+  margin-bottom: 4em;
+}
+
+.footer-links li {
+  margin-bottom: 1em;
 }

@@ -21,10 +21,10 @@ nav {
 
 nav li {
   display: flex;
-  margin-left: 1.25em;
 }
 
 nav li a {
   font-family: $header-font;
-  font-size: 0.75rem;
+  font-size: clamp(12px, 2vw, 16px);
+  margin-left: clamp(14px, 4vw, 56px);
 }
