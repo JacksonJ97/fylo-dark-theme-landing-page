@@ -14,7 +14,7 @@
 
 .info-title {
   font-family: $header-font;
-  font-size: 1.125rem;
+  font-size: clamp(18px, 2vw, 20px);
   font-weight: 700;
   margin-bottom: 0.75em;
 }

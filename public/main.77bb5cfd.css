@@ -28,6 +28,7 @@ body {
 button {
   color: white;
   background: linear-gradient(to right, #65e2d9, #339ecc);
+  font-weight: 700;
   border-radius: 24px;
   cursor: pointer;
 }
@@ -41,12 +42,11 @@ button:hover {
   border-radius: 6px;
   padding: 2em 1.75em;
   margin: 0 auto 2em auto;
-  max-width: 300px;
   position: relative;
 }
 
 .testimonial-body {
-  font-size: 0.75rem;
+  font-size: clamp(12px, 2vw, 16px);
   line-height: 1.8;
   margin-bottom: 2em;
 }
@@ -94,14 +94,14 @@ button:hover {
 
 .info-title {
   font-family: "Raleway", sans-serif;
-  font-size: 1.125rem;
+  font-size: clamp(18px, 2vw, 20px);
   font-weight: 700;
   margin-bottom: 0.75em;
 }
 
 h3 {
   font-family: "Raleway", sans-serif;
-  font-size: 1.125rem;
+  font-size: clamp(18px, 4vw, 28px);
   margin-bottom: 1em;
 }
 
@@ -127,6 +127,7 @@ input[type=email] {
 input[type=submit] {
   width: 90%;
   font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   color: white;
   background: linear-gradient(to right, #65e2d9, #339ecc);
   border-radius: 24px;
@@ -155,9 +156,14 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
 header {
-  margin-top: 2em;
-  margin-bottom: 3em;
+  margin-top: clamp(32px, 6vw, 64px);
+  margin-bottom: clamp(48px, 6vw, 64px);
 }
 
 header .container {
@@ -186,9 +192,10 @@ nav li a {
 
 h1 {
   font-family: "Raleway", sans-serif;
-  font-size: 1.375rem;
-  margin-bottom: 0.75em;
+  font-size: clamp(22px, 4vw, 36px);
+  margin: 0 auto 0.75em auto;
   line-height: 1.5;
+  max-width: 700px;
 }
 
 .hero-content {
@@ -223,7 +230,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-column-gap: 32px;
-  max-width: 900px;
+  max-width: 950px;
 }
 
 .second-info-content {
@@ -238,7 +245,7 @@ h1 {
 
 .second-info-content h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 1.125rem;
+  font-size: clamp(18px, 4vw, 36px);
   margin-bottom: 1em;
 }
 
@@ -249,8 +256,8 @@ h1 {
 .second-info-content a {
   display: flex;
   align-items: center;
-  width: 130px;
-  font-size: 0.75rem;
+  width: clamp(130px, 21.5vw, 170px);
+  font-size: clamp(12px, 2vw, 16px);
   color: #65e2d9;
   border-bottom: 1px solid #65e2d9;
   padding-bottom: 0.25em;
@@ -260,6 +267,19 @@ h1 {
   margin-left: 0.25em;
 }
 
+@media (min-width: 1200px) {
+  .second-info-content .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+  }
+
+  .second-info-body {
+    max-width: 440px;
+    margin-left: 4em;
+  }
+}
 .testimonial-content {
   margin-bottom: 10em;
 }
@@ -267,7 +287,8 @@ h1 {
 .testimonial-content .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-column-gap: 24px;
+  grid-column-gap: 48px;
+  max-width: 1250px;
 }
 
 footer {

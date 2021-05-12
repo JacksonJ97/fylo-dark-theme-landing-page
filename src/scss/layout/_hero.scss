@@ -2,9 +2,10 @@
 
 h1 {
   font-family: $header-font;
-  font-size: 1.375rem;
-  margin-bottom: 0.75em;
+  font-size: clamp(22px, 4vw, 36px);
+  margin: 0 auto 0.75em auto;
   line-height: 1.5;
+  max-width: 700px;
 }
 
 .hero-content {

@@ -12,7 +12,7 @@
 
 .second-info-content h2 {
   font-family: $header-font;
-  font-size: 1.125rem;
+  font-size: clamp(18px, 4vw, 36px);
   margin-bottom: 1em;
 }
 
@@ -23,8 +23,8 @@
 .second-info-content a {
   display: flex;
   align-items: center;
-  width: 130px;
-  font-size: 0.75rem;
+  width: clamp(130px, 21.5vw, 170px);
+  font-size: clamp(12px, 2vw, 16px);
   color: $cyan;
   border-bottom: 1px solid $cyan;
   padding-bottom: 0.25em;
@@ -32,4 +32,25 @@
 
 .second-info-content a img {
   margin-left: 0.25em;
+}
+
+// .second-info-content .container {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//   grid-column-gap: 48px;
+//   max-width: 900px;
+// }
+
+@media (min-width: 1200px) {
+  .second-info-content .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+  }
+
+  .second-info-body {
+    max-width: 440px;
+    margin-left: 4em;
+  }
 }

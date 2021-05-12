@@ -5,12 +5,11 @@
   border-radius: 6px;
   padding: 2em 1.75em;
   margin: 0 auto 2em auto;
-  max-width: 300px;
   position: relative;
 }
 
 .testimonial-body {
-  font-size: 0.75rem;
+  font-size: clamp(12px, 2vw, 16px);
   line-height: 1.8;
   margin-bottom: 2em;
 }

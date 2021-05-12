@@ -20,3 +20,9 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}

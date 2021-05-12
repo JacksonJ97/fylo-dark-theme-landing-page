@@ -1,8 +1,8 @@
 @use "abstracts/variables" as *;
 
 header {
-  margin-top: 2em;
-  margin-bottom: 3em;
+  margin-top: clamp(32px, 6vw, 64px);
+  margin-bottom: clamp(48px, 6vw, 64px);
 }
 
 header .container {
