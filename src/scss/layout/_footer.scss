@@ -8,8 +8,8 @@ footer {
   padding-bottom: 2em;
 }
 
-footer .container {
-  max-width: 1200px;
+footer a:hover {
+  text-shadow: 0px 0 1px $white;
 }
 
 .company-logo {
@@ -29,10 +29,6 @@ footer .container {
 
 .contact-info:first-child {
   align-items: flex-start;
-}
-
-.contact-info:first-child img {
-  margin-top: 0.5em;
 }
 
 .contact-info img {
@@ -68,10 +64,24 @@ footer .container {
   margin-right: 0.5em;
 }
 
-@media (min-width: 820px) {
+.social-links a:hover {
+  color: $cyan;
+  border: 1px solid $cyan;
+}
+
+@media (min-width: 1000px) {
+  .links-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .footer-links-container {
     display: flex;
     justify-content: space-between;
+  }
+
+  .footer-links {
+    margin-right: 4em;
   }
 }
 

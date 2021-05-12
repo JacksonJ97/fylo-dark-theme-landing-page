@@ -30,16 +30,18 @@
   padding-bottom: 0.25em;
 }
 
+.second-info-content a:hover {
+  color: $white;
+  border-bottom: 1px solid $white;
+}
+
 .second-info-content a img {
   margin-left: 0.25em;
 }
 
-// .second-info-content .container {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-//   grid-column-gap: 48px;
-//   max-width: 900px;
-// }
+.second-info-content a img:hover {
+  fill: $white;
+}
 
 @media (min-width: 1200px) {
   .second-info-content .container {

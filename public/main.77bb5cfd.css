@@ -126,8 +126,12 @@ input[type=email] {
   width: 90%;
   max-width: 400px;
   border-radius: 24px;
-  padding: 1em 0;
+  padding: 1em 2em;
   margin-bottom: 1.25em;
+}
+
+input[type=email]::placeholder {
+  opacity: 0.6;
 }
 
 input[type=submit] {
@@ -161,7 +165,11 @@ body {
   position: absolute;
   min-width: 300px;
   width: 100%;
-  height: 400px;
+  height: clamp(400px, 100vw, 1200px);
+  background: url(/bg-curvy-mobile.3eef75f6.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 100%;
   background-color: #1c2431;
   top: 0;
   z-index: -2;
@@ -176,6 +184,20 @@ body {
 @media (min-width: 1200px) {
   .container {
     width: 90%;
+  }
+
+  .header-bg {
+    position: absolute;
+    min-width: 300px;
+    width: 100%;
+    height: clamp(400px, 100vw, 1200px);
+    background: url(/bg-curvy-desktop.b3534639.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 100%;
+    background-color: #1c2431;
+    top: 0;
+    z-index: -2;
   }
 }
 header {
@@ -205,6 +227,12 @@ nav li a {
   font-family: "Raleway", sans-serif;
   font-size: clamp(12px, 2vw, 16px);
   margin-left: clamp(14px, 4vw, 56px);
+  border: 1px solid transparent;
+}
+
+nav li a:hover {
+  text-shadow: 0px 0 1px white;
+  border-bottom: 1px solid white;
 }
 
 h1 {
@@ -218,11 +246,6 @@ h1 {
 .hero-content {
   text-align: center;
   margin-bottom: 10em;
-  background: url(/bg-curvy-mobile.3eef75f6.svg);
-  background-repeat: no-repeat;
-  background-size: 100% 140px;
-  background-position: 0% 50%;
-  position: relative;
 }
 
 .hero-content img {
@@ -280,8 +303,17 @@ h1 {
   padding-bottom: 0.25em;
 }
 
+.second-info-content a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
 .second-info-content a img {
   margin-left: 0.25em;
+}
+
+.second-info-content a img:hover {
+  fill: white;
 }
 
 @media (min-width: 1200px) {
@@ -316,8 +348,8 @@ footer {
   padding-bottom: 2em;
 }
 
-footer .container {
-  max-width: 1200px;
+footer a:hover {
+  text-shadow: 0px 0 1px white;
 }
 
 .company-logo {
@@ -337,10 +369,6 @@ footer .container {
 
 .contact-info:first-child {
   align-items: flex-start;
-}
-
-.contact-info:first-child img {
-  margin-top: 0.5em;
 }
 
 .contact-info img {
@@ -376,10 +404,24 @@ footer .container {
   margin-right: 0.5em;
 }
 
-@media (min-width: 820px) {
+.social-links a:hover {
+  color: #65e2d9;
+  border: 1px solid #65e2d9;
+}
+
+@media (min-width: 1000px) {
+  .links-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .footer-links-container {
     display: flex;
     justify-content: space-between;
+  }
+
+  .footer-links {
+    margin-right: 4em;
   }
 }
 @media (min-width: 1200px) {
