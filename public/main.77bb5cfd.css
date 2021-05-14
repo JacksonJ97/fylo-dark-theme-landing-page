@@ -316,10 +316,6 @@ h1 {
   margin-left: 0.25em;
 }
 
-.second-info-content a img:hover {
-  fill: white;
-}
-
 @media (min-width: 1200px) {
   .second-info-content .container {
     display: flex;
