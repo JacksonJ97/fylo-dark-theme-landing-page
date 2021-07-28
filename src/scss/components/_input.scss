@@ -5,7 +5,7 @@ input[type="email"] {
   max-width: 400px;
   border-radius: 24px;
   padding: 1em 2em;
-  margin-bottom: 1.25em;
+  margin-bottom: 0.25em;
 }
 
 input[type="email"]::placeholder {
@@ -28,8 +28,28 @@ input[type="submit"]:hover {
   background: rgba($color: rgb(179, 226, 241), $alpha: 1);
 }
 
+.email-input-result {
+  font-size: 0.75rem;
+  color: hsl(0, 100%, 63%);
+  margin: 0 auto 0.75em auto;
+  text-align: left;
+  width: 75%;
+  max-width: 360px;
+}
+
 @media (min-width: 1000px) {
+  form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .input-wrapper {
+    width: 90%;
+    max-width: 400px;
+  }
+
   input[type="submit"] {
+    align-self: flex-start;
     width: 200px;
     margin-left: 2em;
   }
