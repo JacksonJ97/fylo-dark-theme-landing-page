@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-In this project I learned how to make the typography fuild by using the clamp function. I also used this project to practice how to make a landing page by using CSS Grid, CSS Flexbox, and more.
+In this project, I learned how to make the typography fuild by using the clamp function. I also used this project to practice how to make a landing page by using CSS Grid, CSS Flexbox, and more.
 
 ### Useful resources
 
